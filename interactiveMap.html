@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine Pulse</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="index.html">
+            <img src="images/Palestine Logo.png" alt="Logo" style="width: 230px; height: auto;" class="ms-3">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-center mx-auto">
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown mx-lg-2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Activities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="art&HandiCraftsGallery.html">Art and Craft</a></li>
+                  <li><a class="dropdown-item" href="communityStories.html">Community Stories</a></li>
+                  <li><a class="dropdown-item" href="eventsCalendar.html">Events Calendar</a></li>
+                  <li><a class="dropdown-item active" href="interactiveMap.html">Interactive Map</a></li>
+                  <li><a class="dropdown-item" href="music&DanceShowcase.html">Music and Dance</a></li>
+                  <li><a class="dropdown-item" href="cuisineCorner.html">Cuisine Corner</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link" href="index.html#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#Subscribe" class="btn btn-dark me-3 btn1">Subscribe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="container glassmorphism mt-4" style="height: 200px;">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 d-flex justify-content-center">
+            <img src="images/Map.png" alt="Map" style="width: 200px; height: 60px; margin-top: 40px;">
+    <dotlottie-player src="https://lottie.host/9f13b6b6-3b32-4a21-8ddf-d7420db7295f/HXEE5qOM8S.json" background="transparent" speed="1" style="width: 200px; height: 300px; margin-top: -75px; padding-left: 40px;" loop autoplay></dotlottie-player>          </div>
+        </div>
+      </div>      
+      
+      <div class="google-map mt-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1734617.2925029558!2d33.57227204585326!3d31.881472285131817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151cf2d28866bdd9%3A0xee17a001d166f686!2sPalestine!5e0!3m2!1sen!2s!4v1720365380837!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+      <footer class="text-center text-lg-start border border-white pt-4" id="Subscribe">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-12 mb-4 mb-lg-0">
+              <h5 class="text-uppercase mb-4" style="font-size: 600;">Sign up to our newsletter</h5>
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control shadow-green bdr1"/>
+                <label class="form-label mt-2" for="form5Example2">Email address</label>
+              </div>
+              <button id="subscribeButton" type="submit" class="btn btn-outline-dark btn-block bdr1">Subscribe</button>
+              <div id="subscribeMessage" class="mt-3" style="display: none;">You have subscribed successfully!</div>
+            </div>
+          </div>
+        </div>
+        <footer class="text-center text-lg-start" style="background-image: linear-gradient(to right, rgb(255, 54, 54), rgb(126, 126, 126), rgb(0, 218, 0));">
+          <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-light btn-lg btn-floating mx-2" style="background-color: #fff;">
+              <i class="fab fa-facebook-f text-dark"></i>
+            </button>
+            <button type="button" class="btn btn-light btn-lg btn-floating mx-2" style="background-color: #fff;">
+              <i class="fab fa-youtube text-dark"></i>
+            </button>
+            <button type="button" class="btn btn-light btn-lg btn-floating mx-2" style="background-color: #fff;">
+              <i class="fab fa-instagram text-dark"></i>
+            </button>
+            <button type="button" class="btn btn-light btn-lg btn-floating mx-2" style="background-color: #fff;">
+              <i class="fab fa-twitter text-dark"></i>
+            </button>
+          </div>
+        </footer>
+        <div class="text-center p-3 border-top border-white">
+          © Copyright 2024 PP
+        </div>
+      </footer>
+
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
