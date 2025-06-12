@@ -1,7 +1,7 @@
 # Palestine Pulse – Cultural Tourism Website
 
 A beautifully designed multi-page website that showcases the rich **culture, history, and tourism** of Palestine. 
-This project blends visual storytelling with modern web design practices using **HTML, CSS, Bootstrap**, and **animated icons from LottieFiles**.
+This project blends visual storytelling with modern web design practices using **HTML, CSS, JavaScript, Bootstrap**, and **animated icons from LottieFiles**.
 
 ## 🌍 Project Overview
 
@@ -19,6 +19,7 @@ This website serves as an informative and interactive platform for global audien
 
 - HTML5
 - CSS3
+- JavaScript
 - Bootstrap 5
 - LottieFiles (for animated SVGs)
 - Canva (for posters and graphic design)
