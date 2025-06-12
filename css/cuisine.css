@@ -1,0 +1,221 @@
+:root {
+    --surface-color: #ffffff;
+    --curve: 40;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height:320px;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.553);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .ttle {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #000000;
+    font-weight: 800;
+  }
+  
+  .card__status {
+    font-size: .8em;
+    color: #137100;
+  }
+  
+  .card__description {
+    padding: 0 2em 4em;
+    margin: 0;
+    color: #000000;
+    font-family: "Manrope", sans-serif;   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: 0.85rem !important;
+  }   
+
+  .glassmorphism {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1), 0 -4px 20px rgba(1, 1, 1, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 20px; 
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #0b6e11;
+    font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: black;
+}
+
+.nav-link.active{
+    color: rgb(164, 0, 0) !important;
+}
+
+.text, .navbar, .btn1{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-style: bolder;
+}
+
+.btn1{
+    z-index: 1000;
+}
+
+.btn1:hover {
+    background-color: rgb(171, 1, 1) !important;
+    font-family: "Manrope", sans-serif;
+    font-weight: 900;
+    font-style: bolder;
+    box-shadow: 0 0 15px rgba(231, 3, 3, 0.7) !important;
+}
+
+.nav-link{
+    position: relative;
+    z-index: 1000;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #076900;
+    visibility: hidden;
+    transition: width 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ff08;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+
+.navbar-toggler{
+    border:none;
+    z-index: 1000;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    background-color: #007f0d; 
+    border: 1px solid #dee2e6; 
+  }
+  
+  .dropdown-item {
+    color: #ffffff; 
+    padding: 10px 20px; 
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #ffffff; 
+    color: #9a0000; 
+  }
+  
+  .dropdown-item:focus, .dropdown-item:active{
+    background-color: #900000;
+    color: #ffffff;
+  }
+
+  footer{
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+  }
+
+  .bdr1{
+    border: 3px solid black;
+    font-weight: 900;
+  }

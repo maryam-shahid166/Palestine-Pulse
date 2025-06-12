@@ -1,0 +1,41 @@
+
+    h1 {
+        font-family: "Manrope", sans-serif;
+        margin: 50px;
+        font-weight: bolder;
+        font-size: 50px;
+        color: rgb(164, 0, 0);
+}
+h3{
+    font-family: "Manrope", sans-serif;
+    margin: 30px;
+    font-weight: bold;
+    color:#0b6e11;
+    font-size: 40px;
+}
+.para1{
+    font-family: "Manrope", sans-serif;
+    margin: 30px;
+    width:700px;
+    font-weight: bold;  
+    font-size: 20px;
+} 
+.para3{
+    font-family: "Manrope", sans-serif;
+    font-weight: bold; 
+    font-size: 20px;
+    display: inline-flex;
+}  
+
+ .img2 {
+    height: 1000px;
+    width:100%; 
+    padding: 0px;
+    margin: 0px;
+}
+
+.image-wrapper {
+    display: flex;
+    animation: scroll 8s linear infinite;
+}
+
