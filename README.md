@@ -36,8 +36,4 @@ This website serves as an informative and interactive platform for global audien
 - **Events Calendar** – Festivals and upcoming cultural events
 - **Contact Us** – Connect with the team
 
-## 💻 How to View Locally
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/palestine-tourism-site.git
